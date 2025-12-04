@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawfolio - Dog Photography Portfolio</title>
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Pawfolio - Professional dog photography portfolio capturing the spirit of man's best friend. Puppy portraits, action shots, and heartwarming moments."
+    />
+
+    <!-- Google Fonts I use -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Social Media-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header, using logo dark version -->
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/pawfolio-logo-light-bg.png"
+              alt="Pawfolio - Dog Photography"
+            />
+          </a>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav id="mainNav">
+          <a href="index.html" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <main>
+        <div class="herobox1">
+          <h1>Welcome to Pawfolio</h1>
+          <p>
+            Every dog has a unique personality, a story worth telling, and
+            moments worth preserving. Through my lens, I celebrate the joy,
+            loyalty, and unconditional love that our canine companions bring to
+            our lives.
+          </p>
+          <p>
+            From playful puppies to wise old souls, let's create timeless
+            memories of your furry family members that you'll cherish forever.
+          </p>
+          <a href="#gallery" class="hgbutton">View Gallery</a>
+        </div>
+
+        <!-- Hero Section- image-->
+
+        <div class="herobox2">
+          <img
+            src="images/hero-dog-image.jpg"
+            alt="Happy dog portrait - professional dog photography"
+          />
+        </div>
+      </main>
+
+      <!-- Gallery Cards -->
+      <div class="cards" id="gallery">
+        <div class="card card1">
+          <a href="#" onclick="openLightbox(1); return false;">
+            <h2>Puppy Portraits</h2>
+            <p>Capturing the innocence and joy of early days.</p>
+          </a>
+        </div>
+
+        <div class="card card2">
+          <a href="#" onclick="openLightbox(2); return false;">
+            <h2>Action & Play</h2>
+            <p>Energy, movement, and pure happiness in motion.</p>
+          </a>
+        </div>
+
+        <div class="card card3">
+          <a href="#" onclick="openLightbox(3); return false;">
+            <h2>Breed Showcase</h2>
+            <p>Celebrating the unique beauty of every breed.</p>
+          </a>
+        </div>
+
+        <div class="card card4">
+          <a href="#" onclick="openLightbox(4); return false;">
+            <h2>Dogs in Nature</h2>
+            <p>Where adventure meets companionship.</p>
+          </a>
+        </div>
+
+        <div class="card card5">
+          <a href="#" onclick="openLightbox(5); return false;">
+            <h2>Training Moments</h2>
+            <p>Dedication and focus between handler and dog.</p>
+          </a>
+        </div>
+
+        <div class="card card6">
+          <a href="#" onclick="openLightbox(6); return false;">
+            <h2>Unbreakable Bonds</h2>
+            <p>The deep connection between dogs and humans.</p>
+          </a>
+        </div>
+
+        <div class="card card7">
+          <a href="#" onclick="openLightbox(7); return false;">
+            <h2>Working Heroes</h2>
+            <p>Service and therapy dogs making a difference.</p>
+          </a>
+        </div>
+
+        <div class="card card8">
+          <a href="#" onclick="openLightbox(8); return false;">
+            <h2>Second Chances</h2>
+            <p>Rescue dogs finding hope and forever homes.</p>
+          </a>
+        </div>
+
+        <div class="card card9">
+          <a href="#" onclick="openLightbox(9); return false;">
+            <h2>Paws & Style</h2>
+            <p>Fashion-forward dogs with personality and flair.</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Pawfolio</h2>
+            <p>
+              Welcome! I'm a passionate dog photographer dedicated to capturing
+              the unique personality and spirit of every furry friend I meet.
+              With over 10 years of experience in pet photography, I've learned
+              that patience, understanding, and a genuine love for animals are
+              the keys to creating beautiful, authentic images.
+            </p>
+            <p>
+              Every session is tailored to your dog's comfort and energy level.
+              Whether we're in a studio, at your home, or exploring the great
+              outdoors, my goal is to capture those candid moments that truly
+              showcase your dog's character.
+            </p>
+            <p>
+              I believe that dogs aren't just pets—they're family members who
+              deserve to have their stories told through beautiful, timeless
+              photography.
+            </p>
+            <a href="#contact" class="button">Book a Session</a>
+          </div>
+          <div class="about-image">
+            <img
+              src="images/about-photographer.jpg"
+              alt="Dog photographer with camera"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <h2 class="text-center">Get in Touch</h2>
+        <p class="text-center contact-intro">
+          Ready to capture your dog's personality? Let's create beautiful
+          memories together!
+        </p>
+
+        <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form action="submit-form.php" method="post">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="John Smith"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(555) 123-4567"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="dog-name">Your Dog's Name</label>
+                <input
+                  type="text"
+                  id="dog-name"
+                  name="dog-name"
+                  placeholder="Max"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="session-type">Session Type</label>
+                <select id="session-type" name="session-type">
+                  <option value="">Please select...</option>
+                  <option value="puppy">Puppy Portraits</option>
+                  <option value="action">Action & Play</option>
+                  <option value="breed">Breed Showcase</option>
+                  <option value="nature">Dogs in Nature</option>
+                  <option value="training">Training Moments</option>
+                  <option value="bonds">Unbreakable Bonds</option>
+                  <option value="working">Working Heroes</option>
+                  <option value="rescue">Second Chances</option>
+                  <option value="style">Paws & Style</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell Me About Your Dog *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Tell me about your dog's personality, what kind of photos you're looking for, and any special requests..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="info-box">
+              <h3>📧 Email</h3>
+              <p><a href="mailto:hello@pawfolio.com">hello@pawfolio.com</a></p>
+            </div>
+
+            <div class="info-box">
+              <h3>📞 Phone</h3>
+              <p><a href="tel:555-729-3686">(555) PAW-FOTO</a></p>
+            </div>
+
+            <div class="info-box">
+              <h3>📍 Location</h3>
+              <p>Serving the Greater Chicago Area</p>
+            </div>
+
+            <div class="info-box">
+              <h3>⏰ Response Time</h3>
+              <p>I typically respond within 24 hours</p>
+            </div>
+
+            <div class="info-box social-box">
+              <h3>Follow My Work</h3>
+              <div class="social-links-contact">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+                <a
+                  href="https://www.pinterest.com"
+                  target="_blank"
+                  aria-label="Pinterest"
+                >
+                  <i class="fa-brands fa-pinterest"></i> Pinterest
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+          <img
+            id="lightbox-img"
+            src="images/puppy-portraits.jpg"
+            alt="Gallery image"
+          />
+          <div class="lightbox-info">
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-description"></p>
+          </div>
+          <div class="lightbox-nav">
+            <button class="lightbox-prev" onclick="changeLightbox(-1)">
+              ❮
+            </button>
+            <button class="lightbox-next" onclick="changeLightbox(1)">❯</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p><strong>Pawfolio Dog Photography</strong></p>
+        <p>Email: hello@pawfolio.com | Phone: (555) PAW-FOTO</p>
+
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.pinterest.com"
+            target="_blank"
+            aria-label="Pinterest"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </div>
+
+        <p>&copy; 2025 Pawfolio - All Rights Reserved</p>
+        <p>Capturing the Spirit of Man's Best Friend</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      // Mobile Menu Toggle - HTML can't show/hide the menu when clicking the hamburger icon
+      function toggleMenu() {
+        document.getElementById("mainNav").classList.toggle("active");
+      }
+
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            document.getElementById("mainNav").classList.remove("active");
+          }
+        });
+      });
+
+      // Smooth Scroll - JavaScript makes scroll smoothly
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Gallery Data
+      const galleryData = [
+        {
+          title: "Puppy Portraits",
+          image: "images/puppy-portraits.jpg",
+          description:
+            "Capturing the innocence and joy of early days with your newest family member. Those big puppy eyes, tiny paws, and boundless energy deserve to be preserved forever in professional portraits that capture their unique personality and spirit.",
+        },
+        {
+          title: "Action & Play",
+          image: "images/action-play.jpg",
+          description:
+            "Energy, movement, and pure happiness captured in dynamic motion photography. Freezing those moments of pure joy and excitement when dogs are doing what they love most - running, jumping, and playing with unbridled enthusiasm and freedom.",
+        },
+        {
+          title: "Breed Showcase",
+          image: "images/breed-showcase.jpg",
+          description:
+            "Celebrating the unique beauty and characteristics of every breed with elegance. From majestic German Shepherds to tiny Chihuahuas, every breed has its own special charm, distinctive features, and personality that deserves to be beautifully showcased.",
+        },
+        {
+          title: "Dogs in Nature",
+          image: "images/dogs-nature.jpg",
+          description:
+            "Where adventure meets companionship in stunning outdoor settings and landscapes. Beautiful natural landscapes made even better with our four-legged adventure buddies by our side, exploring forests, mountains, beaches, and trails together as companions.",
+        },
+        {
+          title: "Training Moments",
+          image: "images/training-moments.jpg",
+          description:
+            "Dedication and focus showcasing the special bond between handler and dog. Capturing the concentration, achievement, and beautiful partnership during training sessions together, highlighting the trust, communication, and teamwork that develops.",
+        },
+        {
+          title: "Unbreakable Bonds",
+          image: "images/unbreakable-bonds.jpg",
+          description:
+            "The deep emotional connection and love between dogs and their human families. Tender moments of cuddles, trust, joy, and unconditional love that make the bond so incredibly special and demonstrate why dogs truly are our best friends for life.",
+        },
+        {
+          title: "Working Heroes",
+          image: "images/working-heroes.jpg",
+          description:
+            "Service and therapy dogs making a meaningful difference in people's lives daily. Honoring the incredible dogs who dedicate their lives to helping and serving others with courage, loyalty, and unwavering commitment to their important missions and duties.",
+        },
+        {
+          title: "Second Chances",
+          image: "images/second-chances.jpg",
+          description:
+            "Rescue dogs finding hope, happiness, and loving forever homes with caring families. Every rescue dog has a beautiful story of resilience, hope, transformation, and the incredible power of love to heal, showing that every dog deserves a second chance.",
+        },
+        {
+          title: "Paws & Style",
+          image: "images/paws-style.jpg",
+          description:
+            "Fashion-forward dogs with personality, flair, and distinctive personal style. Bandanas, bow ties, stylish collars, and fashionable accessories that showcase each dog's unique personality, character, and individual style in fun and creative portraits.",
+        },
+      ];
+
+      // HTML can't open a popup, change images, or navigate between photos
+
+      let currentLightboxIndex = 0;
+
+      function openLightbox(index) {
+        currentLightboxIndex = index - 1;
+        updateLightboxContent();
+        document.getElementById("lightbox").style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      function changeLightbox(direction) {
+        currentLightboxIndex += direction;
+        if (currentLightboxIndex < 0)
+          currentLightboxIndex = galleryData.length - 1;
+        if (currentLightboxIndex >= galleryData.length)
+          currentLightboxIndex = 0;
+        updateLightboxContent();
+      }
+
+      function updateLightboxContent() {
+        const data = galleryData[currentLightboxIndex];
+        document.getElementById("lightbox-img").src = data.image;
+        document.getElementById("lightbox-title").textContent = data.title;
+        document.getElementById("lightbox-description").textContent =
+          data.description;
+      }
+
+      // Keyboard Navigation - HTML can't detect keyboard presses
+      document.addEventListener("keydown", (e) => {
+        const lightbox = document.getElementById("lightbox");
+        if (lightbox.style.display === "flex") {
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowLeft") changeLightbox(-1);
+          if (e.key === "ArrowRight") changeLightbox(1);
+        }
+      });
+
+      // Loading Animation
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>
